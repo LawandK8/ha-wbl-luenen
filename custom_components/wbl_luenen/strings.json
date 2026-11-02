@@ -1,0 +1,68 @@
+{
+  "config": {
+    "step": {
+      "user": {
+        "title": "WBL waste calendar Lünen",
+        "description": "Enter your street in Lünen. No house number needed.",
+        "data": {
+          "street": "Street"
+        },
+        "data_description": {
+          "street": "e.g. \"Lange Straße\" or \"Lange Str.\""
+        }
+      },
+      "street": {
+        "title": "Select street",
+        "description": "Several entries match. WBL splits long streets by house numbers, please pick yours.",
+        "data": {
+          "street": "Street"
+        }
+      },
+      "bins": {
+        "title": "Select bins",
+        "description": "Which bins do you have in {street}? Only these get a sensor and appear in the calendar.",
+        "data": {
+          "bins": "Bins"
+        }
+      }
+    },
+    "error": {
+      "cannot_connect": "Could not reach wbl.de.",
+      "street_not_found": "Street not found in Lünen.",
+      "no_bins": "Please select at least one bin."
+    },
+    "abort": {
+      "already_configured": "This street is already set up.",
+      "cannot_connect": "Could not reach wbl.de.",
+      "no_dates": "WBL lists no collection dates for this street."
+    }
+  },
+  "options": {
+    "step": {
+      "init": {
+        "title": "Select bins",
+        "data": {
+          "bins": "Bins"
+        }
+      }
+    },
+    "error": {
+      "no_bins": "Please select at least one bin."
+    },
+    "abort": {
+      "cannot_connect": "Could not reach wbl.de."
+    }
+  },
+  "entity": {
+    "sensor": {
+      "next_collection": {
+        "name": "Next collection"
+      }
+    },
+    "calendar": {
+      "calendar": {
+        "name": "Waste calendar"
+      }
+    }
+  }
+}

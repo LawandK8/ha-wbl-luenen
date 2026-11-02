@@ -1,0 +1,14 @@
+{
+  "domain": "wbl_luenen",
+  "name": "WBL Abfallkalender Lünen",
+  "codeowners": [
+    "@LawandK8"
+  ],
+  "config_flow": true,
+  "documentation": "https://github.com/LawandK8/ha-wbl-luenen",
+  "issue_tracker": "https://github.com/LawandK8/ha-wbl-luenen/issues",
+  "integration_type": "service",
+  "iot_class": "cloud_polling",
+  "requirements": [],
+  "version": "1.0.0"
+}

@@ -1,0 +1,68 @@
+{
+  "config": {
+    "step": {
+      "user": {
+        "title": "WBL Abfallkalender Lünen",
+        "description": "Gib deine Straße in Lünen ein. Eine Hausnummer ist nicht nötig.",
+        "data": {
+          "street": "Straße"
+        },
+        "data_description": {
+          "street": "z. B. \"Lange Straße\" oder \"Lange Str.\""
+        }
+      },
+      "street": {
+        "title": "Straße auswählen",
+        "description": "Mehrere Einträge passen. Lange Straßen sind bei der WBL nach Hausnummern aufgeteilt, bitte wähle den passenden.",
+        "data": {
+          "street": "Straße"
+        }
+      },
+      "bins": {
+        "title": "Tonnen auswählen",
+        "description": "Welche Tonnen hast du in {street}? Nur diese bekommen einen Sensor und erscheinen im Kalender.",
+        "data": {
+          "bins": "Tonnen"
+        }
+      }
+    },
+    "error": {
+      "cannot_connect": "wbl.de ist nicht erreichbar.",
+      "street_not_found": "Straße in Lünen nicht gefunden.",
+      "no_bins": "Bitte mindestens eine Tonne auswählen."
+    },
+    "abort": {
+      "already_configured": "Diese Straße ist bereits eingerichtet.",
+      "cannot_connect": "wbl.de ist nicht erreichbar.",
+      "no_dates": "Für diese Straße liefert die WBL keine Abfuhrtermine."
+    }
+  },
+  "options": {
+    "step": {
+      "init": {
+        "title": "Tonnen auswählen",
+        "data": {
+          "bins": "Tonnen"
+        }
+      }
+    },
+    "error": {
+      "no_bins": "Bitte mindestens eine Tonne auswählen."
+    },
+    "abort": {
+      "cannot_connect": "wbl.de ist nicht erreichbar."
+    }
+  },
+  "entity": {
+    "sensor": {
+      "next_collection": {
+        "name": "Nächste Abholung"
+      }
+    },
+    "calendar": {
+      "calendar": {
+        "name": "Abfallkalender"
+      }
+    }
+  }
+}
